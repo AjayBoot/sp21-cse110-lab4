@@ -48,3 +48,35 @@
     e. `student.courseLoad[0]`
 
 13. 
+    a. `'3' + 2 = '32` because integers map to string equivalents.
+
+    b. `'3' - 2 = 1` because strings map to integer equivalents.
+
+    c. `3 + null = 3` because `null` maps to `0` for integers.
+
+    d. `'3' + null = 3null` because `null` maps to `'null'` for strings.
+
+    e. `true + 3 = 4` because `true` maps to the integer `1`.
+
+    f. `false + null = 0` because `false` and `null` both map to `0` for numeric conversions.
+
+    g. `'3' + undefined = '3undefined'` because `undefined` maps to `'undefined'`
+
+    h. `'3' - undefined = NaN` because `undefined` maps to `NaN` for numeric conversions
+
+14. 
+    a. `'2' > 1 = true` because `'2'` maps to `2` which is greater than `1`.
+
+    b. `'2' < '12' = false` because we are doing string comparison, so we start with comparing `'2' < '1'`, which is false since `'2'` maps to `2` and `'1'` maps to `1`.
+    
+    c. `2 == '2' = true` because `'2'` maps to `2`, which is equal to `2`.
+
+    d. `2 === '2' = false` because `===` checks to strict equality, including type, and since `2` is an integer and `'2'` is a string, `===` immediatly returns false.
+
+    e. `true == 2 = false` because `true` maps to `1` which is not equal to `2`.
+
+    f. `true === Boolean(2) = true` because both values are booleans, and `Boolean(2)` maps to `true`, so both sides are equal and of the same type.
+
+15. `==` checks for equality between two values while also performing type conversions. However, `===` checks for strict equality, and will not preform type conversions. Therfore, if both values are not of the same type, then `===` will immediately return false.
+
+16. [Code](./part1b-question16.js)
