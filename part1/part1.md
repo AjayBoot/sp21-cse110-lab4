@@ -80,3 +80,9 @@
 15. `==` checks for equality between two values while also performing type conversions. However, `===` checks for strict equality, and will not preform type conversions. Therfore, if both values are not of the same type, then `===` will immediately return false.
 
 16. [Code](./part1b-question16.js)
+
+17. The return value of calling the function will be the array `[2,4,6]`. The way `modifyArray` works is that for every value in the array passed in, it will apply the callback function to every value within it. This is seen in the for loop, where the callback function is called and the parameter passed through everytime is an element from the array.
+
+18. [Code](./part1b-question18.js)
+
+19. The code outputs `1`, then `4`, then `3`, then after a one second delay, `2`. `3` prints after `1` and `4` because even though it is on a 0ms delay, it is still delayed till after the next event cycle, so `4` prints before `3`. `2` prints last because it is one a one second delay.
